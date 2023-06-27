@@ -1,0 +1,57 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+/* .first-letter {
+  font-size: 140%;
+  font-weight: bold;
+} */
+
+p::first-letter {
+  font-size: 140%;
+  font-weight: bold;
+}
+
+/* pseudo element to select first line of the paragraph */
+
+p::first-line {
+  font-weight: bold;
+}
+
+/* if you select some text background of the text becomes blue */
+
+/* p::selection {
+  background-color: pink;
+} */
+
+/* This style is only applied to selections in paragraphs */
+
+/* to make it more flexible remove the element type  */
+
+::selection {
+  background: pink;
+}
+
+/* p::before{
+  content:'...'
+}
+ */
+
+/* we can extend it more */
+
+/* p::before{
+  content:'...';
+  display:block;
+} */
+
+/* like before we also have after  */
+
+/* p::after {
+  content: '...';
+} */
+
+p::after {
+  content: '...';
+  display: block;
+}
