@@ -1,0 +1,53 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+.box::before {
+  content: "hello";
+}
+
+
+/* .box {
+  width: 100px;
+  height: 100px;
+  background: gold;
+  padding: 20px;
+  border: 10px solid orange;
+
+} */
+
+.box {
+  width: 100px;
+  height: 100px;
+  /* padding: 20px; */
+  background: gold;
+  /* border:10px solid orange; */
+  /* box-sizing: border-box; */
+  display: inline-block;
+}
+
+
+
+/* if you apply padding or border our box is going to get bigger! */
+
+/* our box got bigger , becoz by default height and width is added to our content box   */
+
+/* margin doesn't affect the size of the box , it will move the box away from other boxes */
+
+
+/* As you can see calculating the actual size of the box can get little bit complex, we don't want to go through this hastel all the time  this is where box-sizing property comes to rescue.
+by default , this property is set to content box 
+
+if you specify box-sizing : border-box;
+
+the width and height that we specify will be applied to border-box;
+*/
